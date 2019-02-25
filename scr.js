@@ -31,14 +31,3 @@ var git = new GitGraph({
 
 var master = git.branch('master')
 .commit('original commit')
-.commit('readme')
-
-var feature1 =  master.branch('feature1')
-.commit('added stuff')
-
-var feature2 = master.branch('feature2')
-.commit('cool stuff')
-
-feature1.commit('fixed stuff')
-.merge(master)
-
